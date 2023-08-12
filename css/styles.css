@@ -1,3 +1,145 @@
-.div h2 {
-  color: aqua;
+:root {
+  --backround-color: #fff;
+  --text-color: #333;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol,
+li {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: var(--backround-color);
+  font-family: "TT Hoves Pro Trial", sans-serif;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 135px;
+  outline: 1px solid red;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 102px;
+}
+
+.logo {
+  width: 68.6px;
+  margin-left: 136.45px;
+  margin-right: 330px;
+}
+.logo .name-company {
+  position: absolute;
+  top: 60.4px;
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.navigation-list li {
+  cursor: pointer;
+  color: var(--text-color);
+  font-size: 12px;
+  margin-right: 60px;
+  align-items: center;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 2.4px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.navigation-list li a {
+  color: var(--text-color);
+}
+.navigation-list li:first-child:before {
+  content: "";
+  display: block;
+  height: 1px;
+  background: var(--text-color);
+  width: 68px;
+  margin-bottom: 4px;
+}
+.navigation-list li:first-child:after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: var(--text-color);
+  width: 68px;
+  margin-top: 4px;
+}
+.navigation-list li:last-child {
+  margin-right: 0;
+}
+
+.for-hover {
+  position: relative;
+  display: inline-block;
+}
+
+.for-hover::before,
+.for-hover::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  margin: -4px 0;
+  height: 1px;
+  background-color: var(--text-color);
+  opacity: 0;
+  transition: all 0.6s;
+}
+
+.for-hover::before {
+  top: 0;
+  right: 0;
+  transform-origin: top right;
+  transform: scaleX(0);
+}
+
+.for-hover::after {
+  bottom: 0;
+  left: 0;
+  transform-origin: bottom left;
+  transform: scaleX(0);
+}
+
+.for-hover:hover::before,
+.for-hover:hover::after {
+  opacity: 1;
+  width: 100%;
+  transform: scaleX(1);
 }/*# sourceMappingURL=styles.css.map */
