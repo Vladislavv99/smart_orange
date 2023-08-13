@@ -183,13 +183,6 @@ textarea {
 
 .main-img {
   position: relative;
-  transform: translate(0, 170%);
-  opacity: 0;
-  transition: all 700ms linear 600ms;
-}
-.main-img ._active {
-  opacity: 1;
-  transform: translate(0, 0);
 }
 .main-img button {
   padding: 0;
