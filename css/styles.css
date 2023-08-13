@@ -52,6 +52,18 @@ textarea {
   max-width: 1170px;
 }
 
+._anim-show {
+  transform: translate(0, 120%);
+  opacity: 0;
+  transition: all 1.5s linear 250ms;
+}
+
+._anim-show._active,
+._active ._anim-show {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
 .header {
   display: flex;
   align-items: center;

@@ -53,6 +53,18 @@ textarea {
     // outline: 1px solid red;
 }
 
+._anim-show {
+    transform: translate(120%, 0);
+    opacity: 0;
+    transition: all 1.5s linear 250ms;
+}
+
+._anim-show._active,
+._active ._anim-show{
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
 // !--------HEADER--------
 .header{
     display: flex;

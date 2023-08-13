@@ -93,12 +93,13 @@
         </div>
         <div class="main-img anim-items _anim-no-hide">
           <img
+            class="_anim-show"
             width="770"
             height="829"
             src="./img/main-image.png"
             alt="Big modern house"
           />
-          <button class="for-hover-btn">
+          <button class="for-hover-btn _anim-show">
             <span class="box"
               >ВЗГЛЯНУТЬ
               <svg width="17" height="8">
@@ -109,32 +110,34 @@
         </div>
       </section>
       <section class="about-company container">
-        <div class="two-pic anim-items">
+        <div class="two-pic anim-items _anim-no-hide">
           <img
-            class="first-pic"
+            class="first-pic _anim-show"
             width="270"
             height="265"
             src="./img/first-of-second-sec.png"
             alt="Big house"
           />
           <img
+            class="_anim-show"
             width="270"
             height="140"
             src="./img/second-of-second-sec.png"
             alt="Beautiful house"
           />
         </div>
-        <div class="one-pic">
+        <div class="one-pic anim-items _anim-no-hide">
           <img
+            class="_anim-show"
             width="270"
             height="365"
             src="./img/third-of-second-sec.png"
             alt="Large house"
           />
         </div>
-        <div class="info-about-us">
-          <h2 class="anim-items">О компании</h2>
-          <p>
+        <div class="info-about-us anim-items _anim-no-hide">
+          <h2 class="anim-items _anim-show">О компании</h2>
+          <p class="_anim-show">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -142,7 +145,7 @@
             only five centuries, but also the leap into electronic typesetting,
             remaining essentially unchanged.
           </p>
-          <button>
+          <button class="_anim-show">
             ЧИТАТЬ
             <svg width="17" height="8">
               <use href="./img/icons/sprite.svg#icon-arrow-right"></use>
@@ -150,19 +153,19 @@
           </button>
         </div>
       </section>
-      <section class="main-tasks container">
-        <h2>Основные задачи</h2>
-        <div class="our-tasks">
-          <div>
-            <p class="number-of-task">1</p>
-            <p class="first-task-info">
+      <section class="main-tasks container anim-items _anim-no-hide">
+        <h2 class="_anim-show">Основные задачи</h2>
+        <div class="our-tasks anim-items _anim-no-hide">
+          <div class="anim-items _anim-no-hide">
+            <p class="number-of-task _anim-show">1</p>
+            <p class="first-task-info _anim-show">
               Создание комфортных условий и повышение качества обслуживания
               клиентов
             </p>
           </div>
-          <div>
-            <p class="number-of-task">2</p>
-            <p class="second-task-info">
+          <div class="anim-items _anim-no-hide">
+            <p class="number-of-task _anim-show">2</p>
+            <p class="second-task-info _anim-show">
               Постоянно совершенствовать качество предоставляемых услуг путем
               обучения персонала, закупки нового оборудования и усиленной
               рекламы на рынке
@@ -225,29 +228,46 @@
           </svg>
         </button>
       </section>
-      <section class="contact-us container">
-        <h2>Связаться с нами</h2>
-        <div class="contact-info">
-          <form class="contact-form">
-            <input type="text" name="name" placeholder="Имя" />
-            <input type="number" name="number" placeholder="Номер телефона*" />
-            <input type="email" name="email" placeholder="E-mail*" />
+      <section class="contact-us container anim-items _anim-no-hide">
+        <h2 class="_anim-show">Связаться с нами</h2>
+        <div class="contact-info _anim-show">
+          <form class="contact-form anim-items _anim-no-hide">
             <input
+              class="_anim-show"
+              type="text"
+              name="name"
+              placeholder="Имя"
+            />
+            <input
+              class="_anim-show"
+              type="number"
+              name="number"
+              placeholder="Номер телефона*"
+            />
+            <input
+              class="_anim-show"
+              type="email"
+              name="email"
+              placeholder="E-mail*"
+            />
+            <input
+              class="_anim-show"
               type="text"
               name="service"
               placeholder="Интересующий товар/услуга"
             />
             <textarea
+              class="_anim-show"
               name="message"
               id="message"
               cols="30"
               rows="5"
               placeholder="Сообщение*"
             ></textarea>
-            <p>
+            <p class="_anim-show">
               Отправляя заявку Вы соглашаетесь с политикой конфиденциальности
             </p>
-            <button>
+            <button class="_anim-show">
               ОТПРАВИТЬ
               <svg width="17" height="8">
                 <use href="./img/icons/sprite.svg#icon-arrow-right"></use>
@@ -255,6 +275,7 @@
             </button>
           </form>
           <img
+            class="_anim-show"
             width="749"
             height="369"
             src="./img/contact-us.png"
