@@ -175,7 +175,7 @@ textarea {
         font-weight: 300;
         line-height: 64px;
 
-        transform: translate(0, -170%);
+        transform: translate(0, 170%);
         opacity: 0;
         transition: all 700ms linear;
 
@@ -195,6 +195,14 @@ textarea {
 
 .main-img{
     position: relative;
+    transform: translate(0, 170%);
+    opacity: 0;
+    transition: all 700ms linear 600ms;
+
+    ._active{
+        opacity: 1;
+        transform: translate(0, 0);
+    }
     button{
         padding: 0;
         top: 756.5px;
@@ -221,7 +229,7 @@ textarea {
 
 .for-arrows{
     display: flex;
-    transform: translate(-170%, 0);
+    transform: translate(0, 170%);
     opacity: 0;
     transition: all 700ms linear 600ms;
 
