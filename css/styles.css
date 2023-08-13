@@ -460,4 +460,121 @@ textarea {
   margin-left: 69px;
   margin-top: 10px;
   border-radius: 10px;
+}
+
+.contact-us {
+  margin-bottom: 120px;
+}
+.contact-us h2 {
+  color: var(--title-color);
+  font-family: inherit;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 64px;
+  margin-bottom: 22px;
+}
+
+.contact-info {
+  display: flex;
+}
+
+.contact-form {
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.contact-form textarea {
+  background-color: #F3F3F3;
+  border: 1px solid rgba(46, 47, 66, 0.2);
+  margin-bottom: 22px;
+  padding-top: 14px;
+  padding-left: 21px;
+  outline: transparent;
+  transition: all 300ms linear;
+}
+.contact-form textarea:focus {
+  border: 1px solid rgba(103, 104, 125, 0.7);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.contact-form input {
+  width: 391px;
+  height: 46px;
+  background-color: #F3F3F3;
+  padding-top: 15px;
+  padding-bottom: 14px;
+  padding-left: 21px;
+  margin-bottom: 10px;
+  outline: transparent;
+  border: 1px solid rgba(46, 47, 66, 0.2);
+  transition: all 300ms linear;
+}
+.contact-form input:focus {
+  border: 1px solid rgba(103, 104, 125, 0.7);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.contact-form input::-moz-placeholder {
+  color: #8D8D8D;
+  font-family: inherit;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.56px;
+}
+.contact-form input::placeholder {
+  color: #8D8D8D;
+  font-family: inherit;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.56px;
+}
+.contact-form input::-moz-placeholder::after {
+  content: "*";
+  color: red;
+}
+.contact-form input::placeholder::after {
+  content: "*";
+  color: red;
+}
+.contact-form p {
+  width: 331px;
+  color: var(--text-color);
+  font-family: inherit;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  margin-left: 40px;
+  margin-bottom: 21px;
+}
+.contact-form button {
+  background-color: var(--text-color);
+  color: white;
+  font-family: inherit;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 2.4px;
+  border: 1px solid transparent;
+  padding: 24px 64px 23px 65px;
+  transition: all 500ms linear;
+  margin-right: auto;
+}
+.contact-form button svg {
+  fill: white;
+  transition: all 500ms linear;
+}
+.contact-form button:hover {
+  border: 1px solid var(--text-color);
+  background-color: white;
+  color: var(--text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.contact-form button:hover svg {
+  fill: var(--text-color);
 }/*# sourceMappingURL=styles.css.map */
