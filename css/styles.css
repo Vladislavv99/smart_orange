@@ -154,6 +154,10 @@ textarea {
 .name-section {
   margin-right: 123px;
 }
+.name-section ._active {
+  transform: translate(0, 0);
+  opacity: 1;
+}
 .name-section h1 {
   width: 278px;
   margin-top: 333px;
@@ -164,6 +168,9 @@ textarea {
   font-style: normal;
   font-weight: 300;
   line-height: 64px;
+  transform: translate(0, -170%);
+  opacity: 0;
+  transition: all 700ms linear;
 }
 .name-section h1 span {
   color: var(--text-color);
@@ -199,6 +206,13 @@ textarea {
 
 .for-arrows {
   display: flex;
+  transform: translate(-170%, 0);
+  opacity: 0;
+  transition: all 700ms linear 600ms;
+}
+.for-arrows ._active {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 .for-arrows .first-btn {
   padding: 0;
@@ -228,6 +242,13 @@ textarea {
 
 .for-numbers {
   display: flex;
+  transform: translate(0, 170%);
+  opacity: 0;
+  transition: all 700ms linear 900ms;
+}
+.for-numbers ._active {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 .for-numbers .line-45deg {
   transform: rotate(-45deg);
